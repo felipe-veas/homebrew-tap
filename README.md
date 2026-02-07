@@ -16,6 +16,8 @@ brew tap felipe-veas/tap
 
 A powerful Kubernetes debugging tool.
 
+Project URL: https://github.com/felipe-veas/k8s-pods-debug
+
 ```bash
 brew install kpdbug
 ```
