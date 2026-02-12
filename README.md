@@ -1,4 +1,4 @@
-# Homebrew Tap for felipe-veas
+# Homebrew Tap 
 
 This is a custom Homebrew tap for my projects.
 
