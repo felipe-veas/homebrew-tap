@@ -5,21 +5,21 @@
 class Dotctl < Formula
   desc "Sync dotfiles across machines (macOS + Linux)"
   homepage "https://github.com/felipe-veas/dotctl"
-  version "1.6.0"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felipe-veas/dotctl/releases/download/v1.6.0/dotctl_Darwin_x86_64.tar.gz"
-      sha256 "92c84fbb0678f314be28103bfa2a17076adc2fd09862c1437397ed8e531e5324"
+      url "https://github.com/felipe-veas/dotctl/releases/download/v1.7.0/dotctl_Darwin_x86_64.tar.gz"
+      sha256 "d1df901418e78f51d6acc324ff77e2f23067610449572046c258115778015e62"
 
       def install
         bin.install "dotctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felipe-veas/dotctl/releases/download/v1.6.0/dotctl_Darwin_arm64.tar.gz"
-      sha256 "4dc9ac10d0e8d8ce71900621f1cb5df0be0f01e3e2671e661889b6a15b74ed26"
+      url "https://github.com/felipe-veas/dotctl/releases/download/v1.7.0/dotctl_Darwin_arm64.tar.gz"
+      sha256 "e1eb53ab3a109d72fd9780980fbf65bc61984baffbb83573e06db829cb1694b9"
 
       def install
         bin.install "dotctl"
@@ -29,15 +29,15 @@ class Dotctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipe-veas/dotctl/releases/download/v1.6.0/dotctl_Linux_x86_64.tar.gz"
-      sha256 "fba541e91874d7a9edc625d758c9edd313565dab95beea62a04bcdbfeac8beb4"
+      url "https://github.com/felipe-veas/dotctl/releases/download/v1.7.0/dotctl_Linux_x86_64.tar.gz"
+      sha256 "db1d4853e0aa8519310a3cd2c108104d447e7981cf84166e6d4140487e8b2772"
       def install
         bin.install "dotctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipe-veas/dotctl/releases/download/v1.6.0/dotctl_Linux_arm64.tar.gz"
-      sha256 "1634c99fa5c7f5f2c41d94b3674749833ef1b983998ad4ad3977d1d03deb86d7"
+      url "https://github.com/felipe-veas/dotctl/releases/download/v1.7.0/dotctl_Linux_arm64.tar.gz"
+      sha256 "55d07f56fda8e2a4fe8216db211703b8768d2807513fb63f87aa446f3266d8de"
       def install
         bin.install "dotctl"
       end
