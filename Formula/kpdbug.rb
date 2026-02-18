@@ -5,21 +5,21 @@
 class Kpdbug < Formula
   desc "Kubernetes pod debugging tool"
   homepage "https://github.com/felipe-veas/k8s-pods-debug"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.2.0/kpdbug_Darwin_x86_64.tar.gz"
-      sha256 "1e676d4a1c5b459ea909d9f43014f253b78d8ebb5f2df0ca1426af1c8815b3ee"
+      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.3.0/kpdbug_Darwin_x86_64.tar.gz"
+      sha256 "f2b485d8ae5baaa68b28849fb2cc46084dda89382dcb262d37bc331d296ad842"
 
       def install
         bin.install "kpdbug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.2.0/kpdbug_Darwin_arm64.tar.gz"
-      sha256 "c1258d791e55f6c3a58b89ca32670116d1f890328702560840b416f2ef1cc499"
+      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.3.0/kpdbug_Darwin_arm64.tar.gz"
+      sha256 "dc5d99c56f5f17debb45131d2f1258dc6293a9926bebd0998d0b2810b4ae3c36"
 
       def install
         bin.install "kpdbug"
@@ -29,15 +29,15 @@ class Kpdbug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.2.0/kpdbug_Linux_x86_64.tar.gz"
-      sha256 "3df016dcd65ba236664a1e64dcefeb720a38ecb21810229d716d16fdeb58ea1a"
+      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.3.0/kpdbug_Linux_x86_64.tar.gz"
+      sha256 "f47232b6729abf741daefe8c8e45a3e8396d876dcc7baa301e27dd2b3ba39370"
       def install
         bin.install "kpdbug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.2.0/kpdbug_Linux_arm64.tar.gz"
-      sha256 "d0b47aadbf8e536620164025a8ce96e6297a17e6df19b0173caa940f68fcc465"
+      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.3.0/kpdbug_Linux_arm64.tar.gz"
+      sha256 "da7f9447c51b8493cc97871429d2661804696f6ac58244f05ed643e3a714273c"
       def install
         bin.install "kpdbug"
       end
