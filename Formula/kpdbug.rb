@@ -5,21 +5,21 @@
 class Kpdbug < Formula
   desc "Kubernetes pod debugging tool"
   homepage "https://github.com/felipe-veas/k8s-pods-debug"
-  version "1.4.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.4.0/kpdbug_Darwin_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "5a6d9483e01000ab3ee937df755026f0cdc1ddc52eb35d7a709b501e384303e5"
+      url "https://github.com/felipe-veas/k8s-pods-debug-releases/releases/download/v1.4.1/kpdbug_Darwin_x86_64.tar.gz"
+      sha256 "8b688e3c532d0569b5fe75ca32197ec2df82558930746df67484a2f513ce01b7"
 
       def install
         bin.install "kpdbug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.4.0/kpdbug_Darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "2a6d22487b8c3c45ad9e3ba1e8ea7272e72dd1b10069f597de5ec6e95219723b"
+      url "https://github.com/felipe-veas/k8s-pods-debug-releases/releases/download/v1.4.1/kpdbug_Darwin_arm64.tar.gz"
+      sha256 "59f26247595d68a5ae8d49419b832a904996e7dd4f1e42948b67e6474d7a4a9b"
 
       def install
         bin.install "kpdbug"
@@ -29,15 +29,15 @@ class Kpdbug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.4.0/kpdbug_Linux_x86_64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "c51e4fb22130fae01b0810aa6b569dd99bbf3f6f53169038bcf6b368a3d0822e"
+      url "https://github.com/felipe-veas/k8s-pods-debug-releases/releases/download/v1.4.1/kpdbug_Linux_x86_64.tar.gz"
+      sha256 "8a95820adac1aca5af73083a60f74930dab6fa9466b487773968633d2b971ae3"
       def install
         bin.install "kpdbug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipe-veas/k8s-pods-debug/releases/download/v1.4.0/kpdbug_Linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "002afadba3d0ede446f02852ae4b77d5e64f6a3249e6e665352d7429c5d65ba3"
+      url "https://github.com/felipe-veas/k8s-pods-debug-releases/releases/download/v1.4.1/kpdbug_Linux_arm64.tar.gz"
+      sha256 "a6638198140528e3403376d9b68b7cc752377cbf58950cd2ed8ab9e319a96f97"
       def install
         bin.install "kpdbug"
       end
